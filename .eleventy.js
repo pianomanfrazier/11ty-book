@@ -19,8 +19,6 @@ const minifyHtml = (content) => htmlmin.minify(content, {
   collapseWhitespace: true
 });
 
-const audioFileExtensions = [{ extension: 'ogg', flag: '-Ov' }, { extension: 'flac', flag: '-OF' }]
-
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);

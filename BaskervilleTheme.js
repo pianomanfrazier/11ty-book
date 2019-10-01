@@ -69,9 +69,9 @@ const theme = {
         content: '"— "',
       },
       [MOBILE_MEDIA_QUERY]: {
-        // html: {
-        //   fontSize: `${17 / 16 * 100}%`,
-        // },
+        html: {
+          fontSize: `${17 / 16 * 100}%`,
+        },
         blockquote: {
           marginLeft: '-1rem',
           marginRight: 0,

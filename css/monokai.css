@@ -1,13 +1,3 @@
-/**
- * Darcula theme
- *
- * Adapted from a theme based on:
- * IntelliJ Darcula Theme (https://github.com/bulenkov/Darcula)
- *
- * @author Alexandre Paradis <service.paradis@gmail.com>
- * @version 1.0
- */
-
 code[class*="language-"],
 pre[class*="language-"] {
 	color: #a9b7c6;

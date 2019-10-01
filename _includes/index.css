@@ -81,6 +81,7 @@ main {
   background-image: none;
   transition: all 350ms ease;
   padding: 1em;
+  border-bottom: none;
 }
 .nav svg {
   stroke:rgba(0,0,0,0.5);
@@ -240,6 +241,11 @@ h6:hover>.direct-link
 }
 
 /* CODE HIGHLIGHT */
+
+pre code {
+  overflow: auto;
+  display: block;
+}
 pre,
 code {
 	font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
@@ -253,13 +259,19 @@ pre {
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
-	-moz-tab-size: 2;
-	-o-tab-size: 2;
-	tab-size: 2;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
 	-webkit-hyphens: none;
 	-moz-hyphens: none;
 	-ms-hyphens: none;
-	hyphens: none;
+  hyphens: none;
+}
+code[class*="language-"]::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+  padding: 0.5em 1em;
 }
 .highlight-line {
   padding: 0.125em 1em;

@@ -1,0 +1,60 @@
+{%- macro nav(collection, title) -%}
+  {% if title %}
+      <h2>{{ title | safe }}</h2>
+  {% endif %}
+  <ul class="">
+    {% for item in collection %}
+      <li class="{% if item.url == page.url %} link-active {% endif %}"><a href="{{ item.url | url }}">{{ item.data.title | safe }}</a></li>
+    {% endfor %}
+  </ul>
+{%- endmacro -%}
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon_32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon_16.png">
+		<title>{{ (renderData.title or title or metadata.title) | striptags }}</title>
+		<link rel="stylesheet" href="{{ '/css/prism-darcula.css' | url }}">
+		<link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    {%- typography 'xxx' -%}
+    {%- typographyFonts 'xxx' -%}
+    {% set css %}{% include "index.css" %}{% endset %}
+    <style>{{ css | cssmin | safe }}</style>
+	</head>
+	<body>
+		<nav id="main-nav" class="main-nav">
+      {{ nav(collections.book) }}
+      <hr>
+      {{ nav(collections.exercises, 'Exercises') }}
+      <hr>
+      {{ nav(collections.appendix, 'Appendix') }}
+		</nav>
+
+    <div id="main-content" class="main-content">
+      <header class="title-bar">
+        <button id="hamburger" onclick="toggleMainNav()" class="hamburger hamburger--spring" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+      </header>
+
+      <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+        {{ content | safe }}
+      </main>
+
+      <footer></footer>
+    </div>
+
+		<!-- Current page: {{ page.url | url }} -->
+    {% set js %}{% include "menu.js" %}{% endset %}
+    <script>{{ js | jsmin | safe }}</script>
+
+	</body>
+</html>

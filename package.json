@@ -1,0 +1,45 @@
+{
+  "name": "eleventy-book",
+  "version": "1.0.0",
+  "description": "A gitbook style clone based on the eleventy blog starter",
+  "scripts": {
+    "build": "npx eleventy",
+    "watch": "npx eleventy --watch",
+    "debug": "DEBUG=* npx eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": {
+    "name": "Ryan Frazier",
+    "email": "pianomanfrazier@gmail.com",
+    "url": "https://pianomanfrazier.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.5.3",
+    "@11ty/eleventy-plugin-rss": "^1.0.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^1.0.5",
+    "clean-css": "^4.2.1",
+    "compass-vertical-rhythm": "^1.4.5",
+    "eslint": "^5.6.1",
+    "gray-percentage": "^2.0.0",
+    "html-minifier": "^3.5.20",
+    "luxon": "^1.0.0",
+    "markdown-it": "^8.4.1",
+    "markdown-it-anchor": "^4.0.0",
+    "markdown-it-emoji": "^1.4.0",
+    "markdown-it-sup": "^1.0.0",
+    "markdown-it-toc-done-right": "^2.0.3",
+    "typography": "^0.16.17",
+    "typography-breakpoint-constants": "^0.15.10",
+    "uglify-es": "^3.3.9",
+    "uslug": "^1.0.4"
+  },
+  "dependencies": {}
+}

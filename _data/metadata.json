@@ -1,0 +1,15 @@
+{
+  "title": "Your Awesome Book",
+  "url": "https://myurl.com/",
+  "feed": {
+    "subtitle": "It's gonna be great",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "url": "https://myurl.com/feed/feed.xml",
+    "id": "https://myurl.com/"
+  },
+  "author": {
+    "name": "",
+    "email": ""
+  }
+}

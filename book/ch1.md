@@ -16,6 +16,11 @@ ${toc}
 
 Excepteur aliquip exercitation reprehenderit tempor veniam pariatur sit pariatur ut eu reprehenderit aute dolor. Esse aliqua do commodo aliqua sunt nostrud nisi duis aute. Tempor incididunt deserunt sit duis mollit duis cupidatat nostrud culpa proident ullamco.
 
+
+```bash
+npm install --global elm elm-format
+```
+
 ## A second heading
 
 Incididunt exercitation commodo non minim officia. In veniam dolor adipisicing laboris magna velit aute excepteur sint. Officia occaecat irure laboris amet esse qui nisi eiusmod reprehenderit. Adipisicing nostrud adipisicing dolore magna velit ullamco laborum exercitation deserunt adipisicing sint dolor sunt.

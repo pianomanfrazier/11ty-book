@@ -40,13 +40,9 @@ function myCommand() {
 }
 ```
 
-``` latex/1-3
-\score{
-	\relative c' {
-    \time 6/4
-		c cis ees e f fis
-	}
-	\layout{}
-  \midi{\tempo 4 = 130}
-}
+``` python/1-3
+import sys
+import os
+
+sys.call('elm make', shell=True)
 ```

@@ -32,11 +32,13 @@ Lorem markdownum **rostro** agrosque velles, *insania oscula* Euagrus aevo inde
 cura fatisque moverat mox agmen. Haereat facio pectora reliquit sequuntur meae,
 intabescere caelo; ille.
 
+```c
     box_pci.rgb_cell(file, icfWimax);
     linux = digital_push;
     hard_tag_byte.column_unix(desktop.compression_scanner(55 + mouse, -3 +
             xml_minisite), igpDaemonSymbolic, boot);
     autoresponder_restore = 122052;
+```
 
 ## Pater fractaque aspergine ingreditur proles relinquit tellus
 

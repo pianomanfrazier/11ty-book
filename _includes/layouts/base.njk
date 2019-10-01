@@ -56,6 +56,9 @@
 		<!-- Current page: {{ page.url | url }} -->
     {% set js %}{% include "menu.js" %}{% endset %}
     <script>{{ js | jsmin | safe }}</script>
+    {% set sw %}{% include "inline_sw.js" %}{% endset %}
+    <script>{{ sw | jsmin | safe }}</script>
+
 
 	</body>
 </html>

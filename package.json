@@ -39,7 +39,8 @@
     "typography": "^0.16.17",
     "typography-breakpoint-constants": "^0.15.10",
     "uglify-es": "^3.3.9",
-    "uslug": "^1.0.4"
+    "uslug": "^1.0.4",
+    "workbox-cli": "^4.3.1"
   },
   "dependencies": {}
 }

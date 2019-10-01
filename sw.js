@@ -4,7 +4,8 @@ if (workbox) {
     console.log(`Yay! Workbox is loaded 🎉`);
     // Cache the Google Fonts stylesheets with a stale while revalidate strategy.
 
-    workbox.precaching.precacheAndRoute([]);
+    // TODO: have a better cache invalidation strategy
+    // workbox.precaching.precacheAndRoute([]);
 
     workbox.routing.registerRoute(
         /^https:\/\/fonts\.googleapis\.com/,

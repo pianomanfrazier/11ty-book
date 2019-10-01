@@ -236,26 +236,30 @@ pre {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
-	padding: 0.5em !important;
-	margin: .5em 0;
-	background-color: #f6f6f6;
 }
 .highlight-line {
-	padding: 0.125em 1em; /* 2px 16px /16 */
+  padding: 0.125em 1em;
 }
 .highlight-line-isdir {
 	color: #b0b0b0;
 	background-color: #222;
 }
 .highlight-line-active {
-	background-color: #444;
-	background-color: hsla(0, 0%, 27%, .8);
+  background: rgba(128, 150, 161, 0.2);
 }
 .highlight-line-add {
-	background-color: #45844b;
+	background-color: rgba(69, 132, 75, 0.2);
+}
+.highlight-line-add::before {
+  /* content: "-";
+  font-weight: 700; */
 }
 .highlight-line-remove {
-	background-color: #902f2f;
+	background-color: rgba(144, 47, 47, 0.2);
+}
+.highlight-line-remove::before {
+  /* content: "+";
+  font-weight: 700; */
 }
 
 /*!
@@ -265,7 +269,7 @@ pre {
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
- .hamburger {
+.hamburger {
   padding: 11px 6px;
   transform: scale(0.6);
   float: left;
@@ -319,7 +323,7 @@ bottom: -10px; }
   /*
    * Spring
    */
-   .hamburger--spring .hamburger-inner {
+  .hamburger--spring .hamburger-inner {
     top: 2px;
     transition: background-color 0s 0.13s linear; }
     .hamburger--spring .hamburger-inner::before {
@@ -342,25 +346,3 @@ bottom: -10px; }
   transform: translate3d(0, 10px, 0) rotate(-45deg); }
 
 
-/* AUDIO CONTROLS */
-.progress-bar,
-.inner-progress-bar {
-  height: 2px;
-  border-radius: 1px;
-}
-.progress-bar {
-  width: 98%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 6px;
-  padding: 0;
-  background-color: #EEE;
-}
-.inner-progress-bar {
-  width: 0%;
-  padding: 0;
-  margin: 0;
-  background-color:#888;
-  transition: width 0.1s ease;
-}

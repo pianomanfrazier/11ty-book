@@ -5,9 +5,6 @@ const { DateTime } = require("luxon");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
-const fs = require('fs')
-const { exec } = require('child_process')
-
 const Typography = require('typography');
 const { theme } = require('./BaskervilleTheme');
 
@@ -18,8 +15,6 @@ const minifyHtml = (content) => htmlmin.minify(content, {
   removeComments: true,
   collapseWhitespace: true
 });
-
-const audioFileExtensions = [{ extension: 'ogg', flag: '-Ov' }, { extension: 'flac', flag: '-OF' }]
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);

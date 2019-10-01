@@ -44,6 +44,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 /* Code blocks */
 pre[class*="language-"] {
 	padding: 2em;
+	padding-top: 4em;
 	margin: 6em 0;
 	overflow: auto;
 }
@@ -69,6 +70,10 @@ code.language-js::before {
 code.language-python::before {
 	content: "Python";
 	color: #a2e57b;
+}
+code.language-bash::before {
+	content: "Bash";
+	color: #ff6d7e;
 }
 
 :not(pre) > code[class*="language-"],

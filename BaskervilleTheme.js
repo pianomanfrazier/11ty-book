@@ -6,19 +6,19 @@ const theme = {
   title: 'Baskerville',
   baseFontSize: '20px',
   baseLineHeight: 1.5,
-  blockMarginBottom: 0.8,
+  blockMarginBottom: 1,
   googleFonts: [
     {
-      name: 'Libre Baskerville',
+      name: 'Roboto Slab',
       styles: ['700'],
     },
     {
-      name: 'Lato',
+      name: 'Roboto',
       styles: ['400', '400i', '700', '700i'],
     },
   ],
-  headerFontFamily: ['Libre Baskerville', 'Georgia', 'Times New Roman', 'Times', 'serif'],
-  bodyFontFamily: ['Lato', 'sans-serif'],
+  headerFontFamily: ['Roboto Slab', 'Georgia', 'Times New Roman', 'Times', 'serif'],
+  bodyFontFamily: ['Roboto', 'sans-serif'],
   bodyColor: gray(30),
   headerWeight: 700,
   bodyWeight: 400,
@@ -31,16 +31,23 @@ const theme = {
         marginTop: rhythm(2),
         marginBottom: rhythm(1),
       },
+      'h1': {
+        marginTop: rhythm(4),
+        marginBottom: rhythm(3),
+      },
+      'h2': {
+        marginTop: rhythm(3),
+        marginBottom: rhythm(2),
+      },
       a: {
         color: linkColor,
         textDecoration: 'none',
-        textShadow:
-          '.03em 0 #fff,-.03em 0 #fff,0 .03em #fff,0 -.03em #fff,.06em 0 #fff,-.06em 0 #fff,.09em 0 #fff,-.09em 0 #fff,.12em 0 #fff,-.12em 0 #fff,.15em 0 #fff,-.15em 0 #fff', // eslint-disable-line
-        backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, ${linkColor} 1px, ${linkColor} 2px, rgba(0, 0, 0, 0) 2px)`, // eslint-disable-line
+        borderBottom: '3px solid rgba(255, 178, 112, 0.5)',
       },
       'a:hover,a:active': {
-        textShadow: 'none',
-        backgroundImage: 'none',
+        background: 'rgba(255, 178, 112, 0.5)',
+        backgroundColor: 'rgba(255, 178, 112, 0.5)',
+        // borderBottom: 'none'
       },
       blockquote: {
         ...scale(1 / 5),
@@ -48,7 +55,7 @@ const theme = {
         fontStyle: 'italic',
         paddingLeft: rhythm(13 / 16),
         marginLeft: 0,
-        borderLeft: `${rhythm(3 / 16)} solid ${gray(30)}`,
+        borderLeft: `${rhythm(3 / 16)} solid #ff6d7e`,
       },
       'blockquote > :last-child': {
         marginBottom: 0,
@@ -62,14 +69,14 @@ const theme = {
         content: '"— "',
       },
       [MOBILE_MEDIA_QUERY]: {
-        html: {
-          fontSize: `${16 / 16 * 100}%`,
-        },
+        // html: {
+        //   fontSize: `${17 / 16 * 100}%`,
+        // },
         blockquote: {
           marginLeft: '-1rem',
           marginRight: 0,
           paddingLeft: rhythm(9 / 16),
-          borderLeft: `${rhythm(1 / 16)} solid ${gray(30)}`
+          borderLeft: `${rhythm(1 / 16)} solid #ff6d7e`
         },
       },
     }

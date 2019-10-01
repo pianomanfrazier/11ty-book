@@ -1,22 +1,6 @@
 code[class*="language-"],
 pre[class*="language-"] {
 	color: #a9b7c6;
-	font-family: Consolas, Monaco, 'Andale Mono', monospace;
-	direction: ltr;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	line-height: 1.5;
-
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
@@ -33,13 +17,13 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 2em;
+	padding: 1em;
 	padding-top: 4em;
 	margin: 6em 0;
-	overflow: auto;
-}
-pre {
 	position: relative;
+}
+code[class*="language-"] {
+	padding-bottom: 2em;
 }
 code[class*="language-"]::before {
 	position: absolute;

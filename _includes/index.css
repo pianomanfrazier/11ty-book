@@ -37,17 +37,6 @@ main {
   left: -300px;
   width: 300px;
 }
-.main-nav hr {
-  background: #EEE !important;
-}
-.main-nav a {
-  color: #EEE !important;
-  border: none;
-}
-.main-nav a:hover {
-  background-color: none;
-  background: none;
-}
 .main-nav h1,
 .main-nav h2 {
   color: #EEE !important;
@@ -56,8 +45,32 @@ main {
   margin-bottom: 1em;
   text-align: center;
 }
-.main-nav li:hover {
-	background-color: rgba(255, 178, 112, 0.4);
+.main-nav hr {
+  background: #EEE !important;
+  margin: 0;
+  margin-bottom: 1em;
+}
+.main-nav a {
+  color: #EEE !important;
+  border: none;
+  padding: 0.5em;
+  padding-left: 2em;
+  transition: 0.2s;
+  width: 100%;
+  display: block;
+}
+.main-nav a:hover {
+	background-color: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.1);
+}
+.main-nav ul {
+  padding: 0;
+  margin: 0;
+}
+.main-nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .main-nav.active {
   left: 0;
@@ -67,6 +80,14 @@ main {
 }
 .tmpl-post h1 {
   text-align: center;
+}
+.tmpl-post {
+  padding-left: 4em;
+  padding-right: 4em;
+}
+.nav:hover {
+  background: #9992;
+  background-color: #9992;
 }
 .nav {
   position: fixed;
@@ -79,13 +100,14 @@ main {
   justify-content: center;
   text-shadow: none;
   background-image: none;
-  transition: all 350ms ease;
+  transition: all 0.2s ease;
   padding: 1em;
   border-bottom: none;
 }
 .nav svg {
   stroke:rgba(0,0,0,0.5);
   margin: 0;
+  transition: 0.2s;
 }
 .nav:hover svg {
   stroke:rgba(0,0,0,0.9);
@@ -102,7 +124,11 @@ main {
 .nav-next.correction {
   margin-left: 0;
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
+  .tmpl-post {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
   .nav svg {
     margin: auto;
   }
@@ -141,7 +167,7 @@ main {
   }
 }
 .link-active {
-	background-color: rgb(255, 178, 112, 0.4);
+	background-color: rgba(255,255,255,0.1);
 }
 .link-active a {
   font-weight: 700;
@@ -149,14 +175,6 @@ main {
 }
 .link-active a:hover {
   background: none;
-}
-.main-nav ul {
-  padding: 0;
-  margin: 0;
-}
-.main-nav li {
-  list-style: none;
-  padding-left: 2em;
 }
 .home {
   text-align: center;
@@ -194,8 +212,7 @@ main :first-child {
 }
 .table-of-contents:before {
   content: "Table of Contents";
-  font-family: 'Libre Baskerville', Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-family: 'Roboto Slab','Georgia','Times New Roman','Times',serif;
   text-align: center;
 }
 .table-of-contents>ol {

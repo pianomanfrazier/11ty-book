@@ -72,12 +72,12 @@ const theme = {
         html: {
           fontSize: `${17 / 16 * 100}%`,
         },
-        blockquote: {
-          marginLeft: '-1rem',
-          marginRight: 0,
-          paddingLeft: rhythm(9 / 16),
-          borderLeft: `${rhythm(1 / 16)} solid #ff6d7e`
-        },
+        // blockquote: {
+        //   marginLeft: '-1rem',
+        //   marginRight: 0,
+        //   paddingLeft: rhythm(9 / 16),
+        //   borderLeft: `${rhythm(1 / 16)} solid #ff6d7e`
+        // },
       },
     }
   }
